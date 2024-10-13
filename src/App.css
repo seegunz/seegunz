@@ -16,3 +16,26 @@
     /* font-weight: <weight>; */
     /* font-style: normal; */
 }
+
+.main{
+    height: 50vh;
+    background-image: url('/main.png');
+    background-color: black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+video{
+    object-fit: cover;
+}
+
+.main span{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    color: white;
+    background-color: rgb(61, 32, 32);
+    padding: 15px;
+    font-weight: bold;
+}

@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { RxHamburgerMenu } from "react-icons/rx"
 import { useNavigate } from 'react-router-dom'
+import { RiCloseLargeFill } from "react-icons/ri";
 
 export default function Nav() {
+  const [toggle, setToggle] = useState(false)
   const nav = useNavigate()
   function handleClick() {
     nav('/')
+  }
+
+  const handleToggle = ()=>{
+    setToggle(!toggle)
   }
   return (
     <header className='flex justify-between items-center px-3 md:px-10 my-5'>
@@ -42,7 +48,7 @@ export default function Nav() {
         <Link className='hover:text-[#451a03]'>ABOUT</Link>
         <Link className='hover:text-[#451a03]'>PROJECTS</Link>
       </motion.nav>
-      <motion.nav className='md:hidden text-4xl mr-3 text-[#451a03]'
+      <motion.nav className='md:hidden text-4xl mr-3 text-[#451a03] cursor-pointer'
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{
@@ -50,8 +56,11 @@ export default function Nav() {
           stiffness: 260,
           damping: 20
         }}
+        onClick={handleToggle}
       >
-        <RxHamburgerMenu />
+        {
+          toggle ? <RiCloseLargeFill />  : <RxHamburgerMenu />
+        }
       </motion.nav>
     </header>
   )
