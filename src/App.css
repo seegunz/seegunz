@@ -11,7 +11,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Edu AU VIC WA NT Dots", cursive;
+    /* font-family: "Edu AU VIC WA NT Dots", cursive; */
+    font-family: 'Courier', monospace;
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
     /* font-style: normal; */
@@ -35,7 +36,7 @@ video{
     bottom: 10%;
     right: 5%;
     color: white;
-    background-color: rgb(61, 32, 32);
+    background-color: #020716;
     padding: 15px;
     font-weight: bold;
 }

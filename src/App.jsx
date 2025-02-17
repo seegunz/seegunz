@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Nav } from './components/index'
 import './App.css'
 import Home from './pages/Home'
+import Bio from './pages/Bio'
+import Portfolio from './pages/Portfolio'
+import Footer from './components/nav/Footer'
 
 export default function App() {
   return (
@@ -11,22 +14,10 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='/bio' element={<Bio />}/>
+          <Route path='/portfolio' element={<Portfolio />}/>
         </Routes>
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
-        <br /><br />
+        <Footer />
       </Router>
     </div>
   )
