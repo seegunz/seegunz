@@ -8,7 +8,7 @@ export default function Footer() {
       }
   return (
     <div className='bg-slate-950 pb-10 text-white'>
-        <hr className='border-black'/>
+        <hr className='border-dotted border-slate-200 border-xl'/>
       <section>
         <img src={seegunz} alt="seegunz" width={200} height={50} />
       </section>
@@ -25,8 +25,8 @@ export default function Footer() {
         <section>
             <h1>CONTACT</h1><br />
             <div className='flex flex-col gap-1'>
-                <a>Mail: emi.seegun@gmail.com</a>
-                <a>Tel: 07062904078</a>
+                <a href='mailto:emi.seegun@gmail.com' className='hover:text-[grey]'>Mail: emi.seegun@gmail.com</a>
+                <a href='tel:+2347062904078' className='hover:text-[grey]'>Tel: +2347062904078</a>
             </div>
         </section>
       </main> 

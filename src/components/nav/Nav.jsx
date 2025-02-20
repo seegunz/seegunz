@@ -16,14 +16,9 @@ export default function Nav() {
 
 
   return (
-    <div >
-      <div className='flex gap-4 justify-end px-2 md:hidden text-[#451a03] text-[14px] text-black py-2 cursor-pointer'>
-          <Link onClick={handleNav} className='hover:text-[#451a03]' to='/'>HOME</Link>
-          <Link onClick={handleNav} className='hover:text-[#451a03]' to='bio'>BIO</Link>
-          <Link onClick={handleNav} className='hover:text-[#451a03]' to='portfolio'>PORTFOLIO</Link>
-          <Link onClick={handleNav} className='hover:text-[#451a03]'>E. PITCH</Link>
-      </div>
-    <header className='flex justify-between items-center px-3 md:px-10 my-5'>
+    <div>
+      
+    <header className='flex justify-between items-center px-3 md:px-10 mb-5 md:pt-2 pt-8 fixed bg-white w-full z-[2000]'>
       <motion.img className='cursor-pointer' src={seegunz} alt="logo" height={50} width={200}
         initial={{
           scale:0,
@@ -57,6 +52,12 @@ export default function Nav() {
         <Link className='hover:text-[#451a03]'>E. PITCH</Link>
         
       </motion.nav>
+      <div className='bg-white w-full flex gap-4 justify-end px-2 md:hidden text-[#451a03] text-[14px] text-black py-2 cursor-pointer top-0 right-4 fixed z-[2000]'>
+          <Link onClick={handleNav} className='hover:text-[#451a03]' to='/'>HOME</Link>
+          <Link onClick={handleNav} className='hover:text-[#451a03]' to='bio'>BIO</Link>
+          <Link onClick={handleNav} className='hover:text-[#451a03]' to='portfolio'>PORTFOLIO</Link>
+          <Link onClick={handleNav} className='hover:text-[#451a03]'>E. PITCH</Link>
+      </div>
     </header>
     </div>
   )

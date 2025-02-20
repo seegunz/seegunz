@@ -9,7 +9,7 @@ export default function Profile() {
           <h1 className='text-xl'>Hi, My Names are</h1> <br />
           <h2 className='text-5xl'>Segun Emeka Emi</h2>
           <br />
-          <h2 className='text-3xl'>Front-end Web Devel0per</h2> <br />
+          <h2 className='text-3xl'>Front-end Web Developer</h2> <br />
           <p className='text-[20px]'>
               I am a front end web developer specializing in building exceptional digital experiences. 
           </p>

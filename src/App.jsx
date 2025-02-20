@@ -12,11 +12,13 @@ export default function App() {
     <div>
       <Router>
         <Nav />
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/bio' element={<Bio />}/>
-          <Route path='/portfolio' element={<Portfolio />}/>
-        </Routes>
+        <div className='pt-32'>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/bio' element={<Bio />}/>
+            <Route path='/portfolio' element={<Portfolio />}/>
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </div>
